@@ -1,0 +1,40 @@
+class Solution {
+    public int maxWater(int[] arr) {
+        // Base case: 3 blocks se kam mein pani nahi ruk sakta
+        if (arr == null || arr.length <= 2) {
+            return 0;
+        }
+        
+        int left = 0;
+        int right = arr.length - 1;
+        
+        int leftMax = 0;
+        int rightMax = 0;
+        int totalWater = 0;
+        
+        // Loop jab tak left aur right pointers mil nahi jaate
+        while (left < right) {
+            
+            // Left side chhoti hai, toh left se calculate karo
+            if (arr[left] < arr[right]) {
+                if (arr[left] >= leftMax) {
+                    leftMax = arr[left]; // Naya max set karo
+                } else {
+                    totalWater += leftMax - arr[left]; // Pani add karo
+                }
+                left++; // Yeh hamesha chalna chahiye if block ke end mein
+            } 
+            // Right side chhoti ya barabar hai, toh right se calculate karo
+            else {
+                if (arr[right] >= rightMax) {
+                    rightMax = arr[right]; // Naya max set karo
+                } else {
+                    totalWater += rightMax - arr[right]; // Pani add karo
+                }
+                right--; // Yeh hamesha chalna chahiye else block ke end mein
+            }
+        }
+        
+        return totalWater;
+    }
+}
