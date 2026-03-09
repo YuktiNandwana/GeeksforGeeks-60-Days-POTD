@@ -11,7 +11,7 @@ To solve the GeeksforGeeks POTD for 60 consecutive days starting from February 1
 
 ## 🛠️ Tech Stack Used
 * **Primary Language:** Java
-* **Focus Areas:** Data Structures, Algorithms (Arrays, Strings), Optimization
+* **Focus Areas:** Data Structures, Algorithms (Arrays,  Strings),   Optimization
 
 ## 📅 Progress Tracker
 
@@ -25,4 +25,4 @@ To solve the GeeksforGeeks POTD for 60 consecutive days starting from February 1
 * **Day 1:** Learned to avoid $O(N^2)$ Time Limit Exceeded (TLE) errors by utilizing a `HashSet` to achieve $O(1)$ constant search time.
 
 ---
-*Consistency is less about motivation and more about discipline.* 💻
+* Consistency is less about motivation and more about discipline. * 💻
